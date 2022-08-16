@@ -1,0 +1,36 @@
+
+  #include <stdio.h>
+int main()
+{
+    int a[5],i,sum=0,t,k;
+    for(i=0;i<=5;i++)
+    {
+        scanf("%d",&a[i]);
+        for(int j=2;j<a[i];j++)
+        {
+            if(a[i]%j==0)
+           { sum=1;
+            break;
+           }
+           else
+           {
+               k=a[i];
+           }
+        }
+         if(sum==0)
+    printf("%d is  prime number\n",a[i]);
+    else
+    printf("%d is not prime number\n",a[i]);
+    for(k=0;k<=5/2;k++)
+    {
+        int n=5,t;
+        t=a[i];
+        a[i]=a[n-i-1];
+        a[n-i-1]=t;
+    }
+    for(k=0;k<5;k++)
+    printf("%d\n",a[i]);
+       
+    }
+   return 0;
+}
