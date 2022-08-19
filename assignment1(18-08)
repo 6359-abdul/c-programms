@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int a[10];
+	int s;
+	int i,j,c=0;
+	scanf("%d\n",&s);
+	for(i=0;i<s;i++);
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<s;i++)
+{
+	for(j=i+1;j<s;j++)
+	{
+		if(a[i]==a[j])
+		{
+			c++;
+		}
+	}
+}
+if(c==0)
+printf("UNIQUE\n");
+else
+printf("DUPLICATE");
+return 0;
+}
