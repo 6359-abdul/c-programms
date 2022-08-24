@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int a[10];
+	int s;
+	int i,j,big=0,n,temp;
+	scanf("%d",&s);
+	for(i=0;i<s;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<s;i++)
+	{
+        n=a[i];
+        temp=0;
+        for(j=2;j<n/2;j++)
+        {
+        	if(n%j==0)
+        	{
+        		temp=1;
+        		break;
+			}
+		}
+		if(temp==0)
+		{
+			if(n>big)big=n;
+		}
+	}
+		printf("%d is big number",big);
+	return 0;
+}
