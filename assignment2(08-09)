@@ -1,0 +1,26 @@
+include<stdio.h>
+Int main()
+{
+Int fib[25], I,n,a,c=0;
+Scanf(“%d”,&n);
+Fib[0] = 0;
+Fib[1] = 1;
+For (I = 2; I < n; i++)
+{
+Fib[i] = fib[I – 1] + fib[i- 2];
+}
+Scanf(“%d”,&a);
+For (I = 0; I < n; i++)
+{
+Printf(“%d “, fib[i]);
+If(a==fib[i])
+C=0;
+Else
+C++;
+}
+If(c==0)
+Printf(“YES”);
+Else
+Printf(“NO”);
+Return 0;
+}
